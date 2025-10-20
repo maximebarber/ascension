@@ -32,8 +32,8 @@ class Book
     public string $author = '';
 
     /** The publication date of this book. */
-    public ?\DateTimeImmutable $publicationDate = null;
     #[ORM\Column]
+    public ?\DateTimeImmutable $publicationDate = null;
 
     /** @var Review[] Available reviews for this book. */
     #[ORM\OneToMany(targetEntity: Review::class, mappedBy: 'book', cascade: ['persist', 'remove'])]
