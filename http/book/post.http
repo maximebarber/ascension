@@ -1,0 +1,10 @@
+POST https://localhost/books HTTP/1.1
+Content-Type: application/ld+json
+
+{
+  "isbn": "2815840053",
+  "title": "",
+  "description": "Hello",
+  "author": "Me",
+  "publicationDate": "today"
+}
